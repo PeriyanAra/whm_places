@@ -1,0 +1,71 @@
+name: whm_places
+description: A new Flutter project.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  auto_route: ^7.8.4
+  auto_route_generator: ^7.3.2
+  bloc: ^8.1.2
+  build_runner: ^2.4.7
+  chopper: ^6.1.4
+  connectivity_plus: ^2.3.8
+  easy_localization: ^3.0.3
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.3
+  flutter_native_splash: ^2.3.9
+  flutter_svg: ^2.0.9
+  freezed: ^2.3.3
+  freezed_annotation: ^2.4.1
+  geolocator: ^10.1.0
+  get_it: ^7.6.0
+  google_maps_flutter: ^2.5.2
+  json_annotation: ^4.8.1
+  loggy: ^2.0.3
+  mockito: ^5.4.4
+  path_provider: ^2.1.2
+  permission_handler: ^11.1.0
+  provider: ^6.0.5
+  shared_preferences: ^2.2.2
+  sqflite: ^2.3.0
+  url_launcher: ^6.2.3
+  visibility_detector: ^0.4.0+2
+
+dev_dependencies:
+  chopper_generator: ^6.0.3
+  dart_code_metrics: ^5.7.2
+  flutter_test:
+    sdk: flutter
+  json_serializable: ^6.6.2
+  whm_analysis:
+    path: ./packages/whm_analysis
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/images/splash_logo_whm.png
+  android: true
+  ios: true
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/fonts/
+    - assets/icons/
+    - assets/images/
+    - assets/translations/
+
+  fonts:
+    - family: outfit
+      fonts:
+         - asset:  assets/fonts/Outfit-Regular.ttf
+           weight: 400
+         - asset: assets/fonts/Outfit-Medium.ttf
+           weight: 500
+         - asset:  assets/fonts/Outfit-Bold.ttf
+           weight: 700
